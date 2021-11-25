@@ -1,0 +1,22 @@
+tinyArray: 
+    -insert 34.3 μs
+    -append 84 μs
+
+smallArray:
+    -insert 57.8 μs
+    -append 116.1 μs
+
+mediumArray:
+    -insert 198.6 μs
+    -append 176.1 μs
+
+largeArray:
+    -insert 9.3315 ms
+    -append 713 μs
+
+extraLargeArray:
+    -insert 907.0601 ms
+    -append 3.4206 ms
+
+
+My testing showed that when the size of the array passed in is smaller, around a couple of hundred, the runtime of the insert function is faster. However, as the array gets larger the insert function becomes less and less efficient compared to the append function. This leads me to the conclusion that the append function is much more scalabe, as it has better retention of efficacy with larger data input.
